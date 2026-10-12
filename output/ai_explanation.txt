@@ -1,0 +1,1 @@
+The query returned 36 numeric Creatinine events in mg/dL. Observed values ranged from 1.0 to 5.3. The mean interval between chart time and store time was 90.14 minutes. These facts describe the extracted records and workflow timing. They do not establish a diagnosis or treatment decision.

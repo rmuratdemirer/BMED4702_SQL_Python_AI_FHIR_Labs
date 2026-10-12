@@ -1,0 +1,58 @@
+{
+  "standard": "W3C PROV-inspired educational manifest",
+  "entity": {
+    "database": {
+      "path": "data/mimic_demo.sqlite",
+      "sha256": "6183eb0bc95c25f383e2261623f44b54eba11cad5f5b7551d260fc343a7cff48"
+    },
+    "query": {
+      "path": "sql/02_creatinine_timeline.sql",
+      "sha256": "d3665ee4264453b554cfb1b640ae4f96121c8fd5caf28dc5c4f90adc61582da4"
+    },
+    "script": {
+      "path": "src/lab_creatinine.py",
+      "sha256": "597b3679023588066fcc5da85a9c8b2a120774176996026d66db811b06dd8ffa"
+    },
+    "outputs": [
+      {
+        "path": "output/creatinine_timeline.csv",
+        "sha256": "ac7444ed875bcfd6512c9348bf0908c8f20b92eaa09ad5efb020a3dc9bbfaf80"
+      },
+      {
+        "path": "output/evidence_summary.json",
+        "sha256": "590a372f48356d6912833716408196f5e9cf6554659ab43bf8d0e7278ee0d074"
+      },
+      {
+        "path": "output/creatinine_timeline.png",
+        "sha256": "dd9752b7e1a7f9f4a42ef75ecd540f0982aa0d05663ca4fa140a72efc900d202"
+      }
+    ]
+  },
+  "activity": {
+    "id": "creatinine_lab_run",
+    "started_at": "2026-10-11T18:24:13.689870+00:00",
+    "ended_at": "2026-10-11T18:24:14.089696+00:00",
+    "used": [
+      "database",
+      "query",
+      "script"
+    ],
+    "generated": [
+      "output/creatinine_timeline.csv",
+      "output/evidence_summary.json",
+      "output/creatinine_timeline.png"
+    ],
+    "parameters": {
+      "subject_id": 10035631,
+      "hadm_id": 29276678,
+      "itemid": 50912
+    }
+  },
+  "agent": {
+    "software": "Python",
+    "python_version": "3.13.9",
+    "sqlite_version": "3.51.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "human_role": "student_or_instructor"
+  }
+}

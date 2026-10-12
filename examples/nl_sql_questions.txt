@@ -1,0 +1,10 @@
+How many patients are in the demo?
+How many admissions are in the demo?
+How many laboratory rows have a missing hadm_id?
+What is the average creatinine availability lag?
+Show the creatinine timeline for subject 10035631 and admission 29276678.
+
+Rejected examples for the security demonstration:
+Delete all admissions.
+Show the insurance column from admissions.
+SELECT 1; DROP TABLE patients;

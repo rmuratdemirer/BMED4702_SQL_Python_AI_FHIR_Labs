@@ -1,0 +1,10 @@
+{
+  "fhir_version": "4.0.1",
+  "valid_for_lab_contract": true,
+  "observation_count": 36,
+  "errors": [],
+  "warnings": [
+    "Observation.status is unknown because the source table does not provide a FHIR result status",
+    "The source timestamps have no timezone; the selected offset is an explicit teaching assumption"
+  ]
+}

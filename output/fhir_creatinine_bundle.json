@@ -1,0 +1,4365 @@
+{
+  "resourceType": "Bundle",
+  "id": "bmed4702-creatinine-observations",
+  "type": "collection",
+  "timestamp": "2026-10-05T09:56:45.000312Z",
+  "entry": [
+    {
+      "fullUrl": "urn:bmed4702:patient:mimic-subject-10035631",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mimic-subject-10035631",
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/subject-id",
+            "value": "10035631"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:encounter:mimic-admission-29276678",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mimic-admission-29276678",
+        "status": "finished",
+        "class": {
+          "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/admission-type",
+          "code": "OBSERVATION ADMIT",
+          "display": "OBSERVATION ADMIT"
+        },
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/hadm-id",
+            "value": "29276678"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "period": {
+          "start": "2116-02-27T20:55:00+00:00",
+          "end": "2116-03-12T07:45:00+00:00"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:device:bmed4702-mimic-fhir-converter",
+      "resource": {
+        "resourceType": "Device",
+        "id": "bmed4702-mimic-fhir-converter",
+        "status": "active",
+        "deviceName": [
+          {
+            "name": "BMED4702 MIMIC to FHIR converter",
+            "type": "user-friendly-name"
+          }
+        ],
+        "version": [
+          {
+            "value": "1.0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-416881",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-416881",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-02-28 02:00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-02-28 03:00:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "416881"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-02-28T02:00:00+00:00",
+        "valueQuantity": {
+          "value": 1.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "12212111"
+          }
+        },
+        "issued": "2116-02-28T03:00:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-416937",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-416937",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-02-28 12:15:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-02-28 14:28:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "416937"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-02-28T12:15:00+00:00",
+        "valueQuantity": {
+          "value": 1.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "60583307"
+          }
+        },
+        "issued": "2116-02-28T14:28:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-416999",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-416999",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-02-29 03:23:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-02-29 05:31:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "416999"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-02-29T03:23:00+00:00",
+        "valueQuantity": {
+          "value": 1.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "60854643"
+          }
+        },
+        "issued": "2116-02-29T05:31:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417091",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417091",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-02-29 12:58:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-02-29 14:09:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417091"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-02-29T12:58:00+00:00",
+        "valueQuantity": {
+          "value": 1.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "47241309"
+          }
+        },
+        "issued": "2116-02-29T14:09:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417193",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417193",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-02-29 19:58:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-02-29 21:08:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417193"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-02-29T19:58:00+00:00",
+        "valueQuantity": {
+          "value": 1.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "70911760"
+          }
+        },
+        "issued": "2116-02-29T21:08:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417265",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417265",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-01 01:56:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-01 03:55:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417265"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-01T01:56:00+00:00",
+        "valueQuantity": {
+          "value": 1.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "27361159"
+          }
+        },
+        "issued": "2116-03-01T03:55:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417309",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417309",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-01 07:33:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-01 08:37:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417309"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-01T07:33:00+00:00",
+        "valueQuantity": {
+          "value": 1.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "44411294"
+          }
+        },
+        "issued": "2116-03-01T08:37:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417381",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417381",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-01 12:40:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-01 15:04:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417381"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-01T12:40:00+00:00",
+        "valueQuantity": {
+          "value": 1.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "53484893"
+          }
+        },
+        "issued": "2116-03-01T15:04:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417420",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417420",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-01 18:30:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-01 19:13:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417420"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-01T18:30:00+00:00",
+        "valueQuantity": {
+          "value": 1.9,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "34164940"
+          }
+        },
+        "issued": "2116-03-01T19:13:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417465",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417465",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-01 23:56:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-02 02:05:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417465"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-01T23:56:00+00:00",
+        "valueQuantity": {
+          "value": 2.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "75746918"
+          }
+        },
+        "issued": "2116-03-02T02:05:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417505",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417505",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-02 05:59:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-02 07:11:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417505"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-02T05:59:00+00:00",
+        "valueQuantity": {
+          "value": 2.7,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "83446764"
+          }
+        },
+        "issued": "2116-03-02T07:11:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417584",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417584",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-02 13:26:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-02 14:35:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417584"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-02T13:26:00+00:00",
+        "valueQuantity": {
+          "value": 3.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "13169358"
+          }
+        },
+        "issued": "2116-03-02T14:35:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417633",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417633",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-02 20:51:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-02 23:22:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417633"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-02T20:51:00+00:00",
+        "valueQuantity": {
+          "value": 3.7,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "45345237"
+          }
+        },
+        "issued": "2116-03-02T23:22:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417725",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417725",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-03 03:49:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-03 04:37:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417725"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-03T03:49:00+00:00",
+        "valueQuantity": {
+          "value": 4.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "87183360"
+          }
+        },
+        "issued": "2116-03-03T04:37:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417801",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417801",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-03 14:10:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-03 15:10:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417801"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-03T14:10:00+00:00",
+        "valueQuantity": {
+          "value": 4.6,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "59370002"
+          }
+        },
+        "issued": "2116-03-03T15:10:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417831",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417831",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-03 19:19:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-03 20:11:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417831"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-03T19:19:00+00:00",
+        "valueQuantity": {
+          "value": 4.4,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "38365059"
+          }
+        },
+        "issued": "2116-03-03T20:11:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417900",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417900",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-04 03:00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-04 03:55:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417900"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-04T03:00:00+00:00",
+        "valueQuantity": {
+          "value": 5.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "82782429"
+          }
+        },
+        "issued": "2116-03-04T03:55:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417940",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417940",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-04 12:16:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-04 14:43:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417940"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-04T12:16:00+00:00",
+        "valueQuantity": {
+          "value": 5.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "49776974"
+          }
+        },
+        "issued": "2116-03-04T14:43:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-417976",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-417976",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-04 17:04:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-04 20:02:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "417976"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-04T17:04:00+00:00",
+        "valueQuantity": {
+          "value": 5.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "81207635"
+          }
+        },
+        "issued": "2116-03-04T20:02:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418011",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418011",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-04 20:02:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-04 21:42:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418011"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-04T20:02:00+00:00",
+        "valueQuantity": {
+          "value": 4.4,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "49417740"
+          }
+        },
+        "issued": "2116-03-04T21:42:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418043",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418043",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-05 02:09:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-05 02:58:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418043"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-05T02:09:00+00:00",
+        "valueQuantity": {
+          "value": 4.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "5918415"
+          }
+        },
+        "issued": "2116-03-05T02:58:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418124",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418124",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-05 14:04:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-05 14:58:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418124"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-05T14:04:00+00:00",
+        "valueQuantity": {
+          "value": 3.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "11102315"
+          }
+        },
+        "issued": "2116-03-05T14:58:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418151",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418151",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-05 18:59:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-05 19:39:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418151"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-05T18:59:00+00:00",
+        "valueQuantity": {
+          "value": 3.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "2091476"
+          }
+        },
+        "issued": "2116-03-05T19:39:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418197",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418197",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-06 02:01:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-06 03:38:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418197"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-06T02:01:00+00:00",
+        "valueQuantity": {
+          "value": 2.9,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "86660954"
+          }
+        },
+        "issued": "2116-03-06T03:38:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418222",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418222",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-06 08:03:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-06 10:09:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418222"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-06T08:03:00+00:00",
+        "valueQuantity": {
+          "value": 2.7,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "69286276"
+          }
+        },
+        "issued": "2116-03-06T10:09:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418286",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418286",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-06 13:42:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-06 15:34:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418286"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-06T13:42:00+00:00",
+        "valueQuantity": {
+          "value": 2.7,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "81540587"
+          }
+        },
+        "issued": "2116-03-06T15:34:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418311",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418311",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-06 19:57:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-06 21:45:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418311"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-06T19:57:00+00:00",
+        "valueQuantity": {
+          "value": 2.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "24464474"
+          }
+        },
+        "issued": "2116-03-06T21:45:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418365",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418365",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-07 01:32:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-07 02:45:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418365"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-07T01:32:00+00:00",
+        "valueQuantity": {
+          "value": 2.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "23450450"
+          }
+        },
+        "issued": "2116-03-07T02:45:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418433",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418433",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-07 07:45:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-07 08:34:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418433"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-07T07:45:00+00:00",
+        "valueQuantity": {
+          "value": 2.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "92265496"
+          }
+        },
+        "issued": "2116-03-07T08:34:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418482",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418482",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-07 14:15:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-07 17:07:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418482"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-07T14:15:00+00:00",
+        "valueQuantity": {
+          "value": 2.3,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "38188817"
+          }
+        },
+        "issued": "2116-03-07T17:07:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418506",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418506",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-07 21:05:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-07 22:15:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418506"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-07T21:05:00+00:00",
+        "valueQuantity": {
+          "value": 2.4,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "83220531"
+          }
+        },
+        "issued": "2116-03-07T22:15:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: ROUTINE"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418545",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418545",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-08 02:52:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-08 04:04:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418545"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-08T02:52:00+00:00",
+        "valueQuantity": {
+          "value": 2.4,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "48555540"
+          }
+        },
+        "issued": "2116-03-08T04:04:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418613",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418613",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-08 15:26:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-08 18:25:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418613"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-08T15:26:00+00:00",
+        "valueQuantity": {
+          "value": 2.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "40075824"
+          }
+        },
+        "issued": "2116-03-08T18:25:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418634",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418634",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-08 18:00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-08 18:37:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418634"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-08T18:00:00+00:00",
+        "valueQuantity": {
+          "value": 2.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "18556693"
+          }
+        },
+        "issued": "2116-03-08T18:37:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418648",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418648",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-08 22:55:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-08 23:44:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418648"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-08T22:55:00+00:00",
+        "valueQuantity": {
+          "value": 2.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "68672100"
+          }
+        },
+        "issued": "2116-03-08T23:44:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:observation:mimic-lab-418701",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mimic-lab-418701",
+        "meta": {
+          "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+          "tag": [
+            {
+              "system": "urn:bmed4702:dataset",
+              "code": "mimic-iv-demo-2.2",
+              "display": "MIMIC-IV Clinical Database Demo v2.2"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "urn:bmed4702:source-timezone-assumption",
+            "valueString": "+00:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime",
+            "valueString": "2116-03-09 05:31:00"
+          },
+          {
+            "url": "urn:bmed4702:source-local-datetime/storetime",
+            "valueString": "2116-03-09 06:36:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+            "value": "418701"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Blood"
+            },
+            {
+              "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+              "code": "50912",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/mimic-subject-10035631"
+        },
+        "encounter": {
+          "reference": "Encounter/mimic-admission-29276678"
+        },
+        "effectiveDateTime": "2116-03-09T05:31:00+00:00",
+        "valueQuantity": {
+          "value": 2.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+            "value": "88609350"
+          }
+        },
+        "issued": "2116-03-09T06:36:00+00:00",
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.5,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 1.2,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "A",
+                "display": "Abnormal"
+              }
+            ],
+            "text": "Source flag: abnormal"
+          }
+        ],
+        "note": [
+          {
+            "text": "MIMIC-IV source priority: STAT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:bmed4702:provenance:mimic-creatinine-transform",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "mimic-creatinine-transform",
+        "target": [
+          {
+            "reference": "Observation/mimic-lab-416881"
+          },
+          {
+            "reference": "Observation/mimic-lab-416937"
+          },
+          {
+            "reference": "Observation/mimic-lab-416999"
+          },
+          {
+            "reference": "Observation/mimic-lab-417091"
+          },
+          {
+            "reference": "Observation/mimic-lab-417193"
+          },
+          {
+            "reference": "Observation/mimic-lab-417265"
+          },
+          {
+            "reference": "Observation/mimic-lab-417309"
+          },
+          {
+            "reference": "Observation/mimic-lab-417381"
+          },
+          {
+            "reference": "Observation/mimic-lab-417420"
+          },
+          {
+            "reference": "Observation/mimic-lab-417465"
+          },
+          {
+            "reference": "Observation/mimic-lab-417505"
+          },
+          {
+            "reference": "Observation/mimic-lab-417584"
+          },
+          {
+            "reference": "Observation/mimic-lab-417633"
+          },
+          {
+            "reference": "Observation/mimic-lab-417725"
+          },
+          {
+            "reference": "Observation/mimic-lab-417801"
+          },
+          {
+            "reference": "Observation/mimic-lab-417831"
+          },
+          {
+            "reference": "Observation/mimic-lab-417900"
+          },
+          {
+            "reference": "Observation/mimic-lab-417940"
+          },
+          {
+            "reference": "Observation/mimic-lab-417976"
+          },
+          {
+            "reference": "Observation/mimic-lab-418011"
+          },
+          {
+            "reference": "Observation/mimic-lab-418043"
+          },
+          {
+            "reference": "Observation/mimic-lab-418124"
+          },
+          {
+            "reference": "Observation/mimic-lab-418151"
+          },
+          {
+            "reference": "Observation/mimic-lab-418197"
+          },
+          {
+            "reference": "Observation/mimic-lab-418222"
+          },
+          {
+            "reference": "Observation/mimic-lab-418286"
+          },
+          {
+            "reference": "Observation/mimic-lab-418311"
+          },
+          {
+            "reference": "Observation/mimic-lab-418365"
+          },
+          {
+            "reference": "Observation/mimic-lab-418433"
+          },
+          {
+            "reference": "Observation/mimic-lab-418482"
+          },
+          {
+            "reference": "Observation/mimic-lab-418506"
+          },
+          {
+            "reference": "Observation/mimic-lab-418545"
+          },
+          {
+            "reference": "Observation/mimic-lab-418613"
+          },
+          {
+            "reference": "Observation/mimic-lab-418634"
+          },
+          {
+            "reference": "Observation/mimic-lab-418648"
+          },
+          {
+            "reference": "Observation/mimic-lab-418701"
+          }
+        ],
+        "occurredPeriod": {
+          "start": "2116-02-28T02:00:00+00:00",
+          "end": "2116-03-09T06:36:00+00:00"
+        },
+        "recorded": "2026-10-05T09:56:44.959232Z",
+        "activity": {
+          "text": "MIMIC-IV Demo row to FHIR R4 Observation transformation"
+        },
+        "agent": [
+          {
+            "type": {
+              "text": "assembler"
+            },
+            "who": {
+              "reference": "Device/bmed4702-mimic-fhir-converter"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "urn:bmed4702:sha256",
+                "value": "6183eb0bc95c25f383e2261623f44b54eba11cad5f5b7551d260fc343a7cff48"
+              },
+              "display": "Prepared MIMIC-IV Demo v2.2 SQLite teaching database"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

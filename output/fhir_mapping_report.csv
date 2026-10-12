@@ -1,0 +1,13 @@
+source,fhir_target,mapping_policy
+labevents.labevent_id,Observation.identifier,Preserve source event identity
+labevents.subject_id,Observation.subject,Reference a minimal deidentified Patient
+labevents.hadm_id,Observation.encounter,Reference the admission context
+labevents.itemid + d_labitems,Observation.code,Use local coding plus LOINC 38483-4 for Blood creatinine
+labevents.charttime,Observation.effectiveDateTime,Clinical event time; attach explicit offset assumption
+labevents.storetime,Observation.issued,Availability time; attach explicit offset assumption
+labevents.valuenum,Observation.valueQuantity.value,Numeric result
+labevents.valueuom,Observation.valueQuantity,Map mg/dL to UCUM without conversion
+ref_range_lower/upper,Observation.referenceRange,Preserve source interval
+flag=abnormal,Observation.interpretation,Map source abnormal flag to v3 code A
+source lacks result status,Observation.status=unknown,Do not invent finality
+database/query/software,Provenance,Record source hash and transformation agent

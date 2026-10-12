@@ -1,0 +1,102 @@
+{
+  "resourceType": "Observation",
+  "id": "mimic-lab-416881",
+  "meta": {
+    "source": "https://physionet.org/content/mimic-iv-demo/2.2/",
+    "tag": [
+      {
+        "system": "urn:bmed4702:dataset",
+        "code": "mimic-iv-demo-2.2",
+        "display": "MIMIC-IV Clinical Database Demo v2.2"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "urn:bmed4702:source-timezone-assumption",
+      "valueString": "+00:00"
+    },
+    {
+      "url": "urn:bmed4702:source-local-datetime",
+      "valueString": "2116-02-28 02:00:00"
+    },
+    {
+      "url": "urn:bmed4702:source-local-datetime/storetime",
+      "valueString": "2116-02-28 03:00:00"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/labevent-id",
+      "value": "416881"
+    }
+  ],
+  "status": "unknown",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "38483-4",
+        "display": "Creatinine [Mass/volume] in Blood"
+      },
+      {
+        "system": "https://physionet.org/content/mimic-iv-demo/2.2/CodeSystem/d-labitems",
+        "code": "50912",
+        "display": "Creatinine"
+      }
+    ],
+    "text": "Creatinine"
+  },
+  "subject": {
+    "reference": "Patient/mimic-subject-10035631"
+  },
+  "encounter": {
+    "reference": "Encounter/mimic-admission-29276678"
+  },
+  "effectiveDateTime": "2116-02-28T02:00:00+00:00",
+  "valueQuantity": {
+    "value": 1.0,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://physionet.org/content/mimic-iv-demo/2.2/identifier/specimen-id",
+      "value": "12212111"
+    }
+  },
+  "issued": "2116-02-28T03:00:00+00:00",
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0.5,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "high": {
+        "value": 1.2,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "MIMIC-IV source priority: STAT"
+    }
+  ]
+}

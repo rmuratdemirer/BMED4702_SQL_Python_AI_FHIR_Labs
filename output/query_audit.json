@@ -1,0 +1,26 @@
+{
+  "question": "How many admissions are in the database?",
+  "started_at": "2026-09-28T05:41:25.852599+00:00",
+  "database": "mimic_demo.sqlite",
+  "policy": {
+    "read_only_uri": true,
+    "query_only": true,
+    "authorizer_default": "deny",
+    "allowed_tables": [
+      "admissions",
+      "d_labitems",
+      "labevents",
+      "patients"
+    ],
+    "max_rows": 100,
+    "timeout_seconds": 2.0
+  },
+  "generator": "deterministic-template",
+  "candidate_sql_sha256": "74eed07a08c0f2aa9aea48cde304341b7ce8172d7fccb699a7824f51d12bdedf",
+  "status": "executed",
+  "validated_sql": "SELECT COUNT(DISTINCT hadm_id) AS admission_count FROM admissions",
+  "parameters": {},
+  "row_count": 1,
+  "finished_at": "2026-09-28T05:41:25.853284+00:00",
+  "result_file": "nl_sql_result.csv"
+}
