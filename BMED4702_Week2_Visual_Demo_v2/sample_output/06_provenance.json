@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-10-19T06:53:05.347340+00:00",
+  "source": "built-in teaching row",
+  "source_open_mode": "not applicable",
+  "source_record": {
+    "table": "labevents + d_labitems",
+    "labevent_id": 1001
+  },
+  "source_sha256": "e7bf156b7598bf3406ab3a8bcc3bb0ccf92ffaaf526a91f10a29e9ea62f0166a",
+  "transform": {
+    "name": "week2_conservative_fhir_mapper",
+    "version": "1.0.0"
+  },
+  "warnings": [],
+  "starter_student_score": 30,
+  "outputs": [
+    "01_creatinine_source_rows.csv",
+    "02_safe_observation.json",
+    "02_unsafe_observation.json",
+    "03_safe_vs_unsafe_validation.png",
+    "03_validation_issues.csv",
+    "03_validation_issues.json",
+    "04_ucum_decisions.png",
+    "05_creatinine_timeline.png",
+    "06_fhir_json_tree.png",
+    "07_student_score_dashboard.png"
+  ]
+}

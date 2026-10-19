@@ -1,0 +1,2 @@
+labevent_id,subject_id,hadm_id,itemid,label,fluid,charttime,storetime,valuenum,valueuom,flag
+1001,10000032,,50912,Creatinine,Blood,2180-03-23 11:51:00,2180-03-23 12:18:00,2.1,mg/dL,abnormal

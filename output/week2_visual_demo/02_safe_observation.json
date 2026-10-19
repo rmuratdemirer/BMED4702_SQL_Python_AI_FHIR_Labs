@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "mimic-lab-19",
+  "status": "unknown",
+  "identifier": [
+    {
+      "system": "urn:physionet:mimic-iv:labevents",
+      "value": "19"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:physionet:mimic-iv:d_labitems",
+        "code": "50912",
+        "display": "Creatinine"
+      }
+    ],
+    "text": "Creatinine"
+  },
+  "subject": {
+    "reference": "Patient/10000032"
+  },
+  "extension": [
+    {
+      "url": "https://example.edu/fhir/StructureDefinition/mimic-charttime-no-timezone",
+      "valueString": "2180-03-23 11:51:00"
+    }
+  ],
+  "valueQuantity": {
+    "value": 0.4,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  }
+}

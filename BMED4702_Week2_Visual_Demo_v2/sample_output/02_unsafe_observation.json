@@ -1,0 +1,21 @@
+{
+  "resourceType": "Observation",
+  "id": "mimic-lab-1001",
+  "status": "final",
+  "code": {
+    "text": "Creatinine"
+  },
+  "subject": {
+    "reference": "Patient/10000032"
+  },
+  "encounter": {
+    "reference": "Encounter/UNKNOWN"
+  },
+  "effectiveDateTime": "2180-03-23 11:51:00",
+  "valueQuantity": {
+    "value": 2.1,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  }
+}

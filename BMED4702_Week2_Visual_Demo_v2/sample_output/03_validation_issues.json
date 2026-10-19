@@ -1,0 +1,32 @@
+[
+  {
+    "resource": "UNSAFE",
+    "severity": "warning",
+    "rule": "status-evidence",
+    "message": "Source row does not prove final status"
+  },
+  {
+    "resource": "UNSAFE",
+    "severity": "error",
+    "rule": "provenance",
+    "message": "Source labevent_id is not recoverable"
+  },
+  {
+    "resource": "UNSAFE",
+    "severity": "error",
+    "rule": "no-invention",
+    "message": "Encounter was invented although hadm_id is null"
+  },
+  {
+    "resource": "UNSAFE",
+    "severity": "error",
+    "rule": "terminology",
+    "message": "Local item code was dropped"
+  },
+  {
+    "resource": "UNSAFE",
+    "severity": "warning",
+    "rule": "time",
+    "message": "Timezone-free source time was presented as FHIR dateTime"
+  }
+]

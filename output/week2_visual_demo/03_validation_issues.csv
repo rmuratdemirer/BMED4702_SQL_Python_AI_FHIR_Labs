@@ -1,0 +1,6 @@
+resource,severity,rule,message
+UNSAFE,warning,status-evidence,Source row does not prove final status
+UNSAFE,error,provenance,Source labevent_id is not recoverable
+UNSAFE,error,no-invention,Encounter was invented although hadm_id is null
+UNSAFE,error,terminology,Local item code was dropped
+UNSAFE,warning,time,Timezone-free source time was presented as FHIR dateTime

@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-10-19T09:52:08.988551+00:00",
+  "source": "C:\\2026-27 Academic Year\\BMED 4702 MEDICAL INFORMATION SYSTEMS\\BMED4702_SQL_Python_AI_FHIR_Labs\\data\\mimic_demo.sqlite",
+  "source_open_mode": "read-only",
+  "source_record": {
+    "table": "labevents + d_labitems",
+    "labevent_id": 19
+  },
+  "source_sha256": "e45127cf595b56d3c30692f71ab9f3f2326ec7881f5e605f8ed8ebcc687bc53e",
+  "transform": {
+    "name": "week2_conservative_fhir_mapper",
+    "version": "1.0.0"
+  },
+  "warnings": [],
+  "starter_student_score": 30,
+  "outputs": [
+    "01_creatinine_source_rows.csv",
+    "02_safe_observation.json",
+    "02_unsafe_observation.json",
+    "03_safe_vs_unsafe_validation.png",
+    "03_validation_issues.csv",
+    "03_validation_issues.json",
+    "04_ucum_decisions.png",
+    "05_creatinine_timeline.png",
+    "06_fhir_json_tree.png",
+    "06_provenance.json",
+    "07_student_score_dashboard.png"
+  ]
+}

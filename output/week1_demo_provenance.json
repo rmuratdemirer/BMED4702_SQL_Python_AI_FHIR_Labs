@@ -1,0 +1,16 @@
+{
+  "course": "BMED4702 Medical Information Systems",
+  "generated_at_utc": "2026-10-19T06:15:39.940378+00:00",
+  "database_path": "C:\\2026-27 Academic Year\\BMED 4702 MEDICAL INFORMATION SYSTEMS\\BMED4702_SQL_Python_AI_FHIR_Labs\\data\\mimic_demo.sqlite",
+  "database_open_mode": "read-only",
+  "script": "run_week1_visual_demo.py",
+  "tables_counted": 4,
+  "outputs": [
+    "week1_01_table_counts.csv",
+    "week1_01_table_counts.png",
+    "week1_02_missingness.csv",
+    "week1_02_missingness.png",
+    "week1_03_availability_lag.png",
+    "week1_03_availability_lag_summary.csv"
+  ]
+}
